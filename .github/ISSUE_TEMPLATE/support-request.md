@@ -26,13 +26,13 @@ If applicable, add screenshots to help explain your problem.
 Add any other context about the problem here.
 
 **Runtime**
-I'm running Muse:
+I'm running BopBotMusic:
 - [ ] Directly from the cloned repository
 - [ ] Inside a Docker container
 - [ ] Something else (please elaborate)
 
 **Versions**
-- Muse:
+- BopBotMusic:
 - Docker (if applicable):
 - OS:
 - Node.js: (if running outside the Docker container)

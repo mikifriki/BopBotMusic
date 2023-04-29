@@ -5,6 +5,8 @@ RUN apt-get update && \
     apt-get install -y ffmpeg tini libssl-dev ca-certificates && \
     rm -rf /var/lib/apt/lists/*
 
+RUN curl -o- -L https://yarnpkg.com/install.sh | bash
+
 # Install dependencies
 FROM base AS dependencies
 
@@ -13,7 +15,7 @@ WORKDIR /usr/app
 COPY package.json .
 COPY yarn.lock .
 
-RUN yarn install --prod
+RUN npm install --omit=dev
 
 # Only keep what's necessary to run
 FROM base AS runner
@@ -35,3 +37,4 @@ ENV COMMIT_HASH $COMMIT_HASH
 ENV BUILD_DATE $BUILD_DATE
 
 CMD ["tini", "--", "yarn", "start"]
+

@@ -1,5 +1,5 @@
 // This script applies Prisma migrations
-// and then starts Muse.
+// and then starts BopBotMusic.
 import dotenv from 'dotenv';
 dotenv.config();
 
