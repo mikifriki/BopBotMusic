@@ -12,6 +12,4 @@ export default class ThirdParty {
     // eslint-disable-next-line
     this.youtube = new ((Youtube as any).default)(config.YOUTUBE_API_KEY);
   }
-
-
 }

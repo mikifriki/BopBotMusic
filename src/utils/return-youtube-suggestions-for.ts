@@ -3,7 +3,7 @@ import getYouTubeSuggestionsFor from './get-youtube-suggestions-for.js';
 
 const returnYouTubeSuggestionsFor = async (query: string, limit = 10): Promise<APIApplicationCommandOptionChoice[]> => {
   const [youtubeSuggestions] = await Promise.all([
-    getYouTubeSuggestionsFor(query)
+    getYouTubeSuggestionsFor(query),
   ]);
 
   const totalYouTubeResults = youtubeSuggestions.length;

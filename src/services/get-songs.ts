@@ -9,7 +9,7 @@ export default class {
   private readonly youtubeAPI: YoutubeAPI;
 
   constructor(
-  @inject(TYPES.Services.YoutubeAPI) youtubeAPI: YoutubeAPI) {
+    @inject(TYPES.Services.YoutubeAPI) youtubeAPI: YoutubeAPI) {
     this.youtubeAPI = youtubeAPI;
   }
 

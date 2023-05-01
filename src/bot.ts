@@ -24,7 +24,7 @@ export default class {
   private readonly commandsByButtonId!: Collection<string, Command>;
 
   constructor(
-  @inject(TYPES.Client) client: Client,
+    @inject(TYPES.Client) client: Client,
     @inject(TYPES.Config) config: Config) {
     this.client = client;
     this.config = config;

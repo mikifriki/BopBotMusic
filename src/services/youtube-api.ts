@@ -30,7 +30,7 @@ export default class {
   private readonly ytsrQueue: PQueue;
 
   constructor(
-  @inject(TYPES.ThirdParty) thirdParty: ThirdParty,
+    @inject(TYPES.ThirdParty) thirdParty: ThirdParty,
     @inject(TYPES.Config) config: Config,
     @inject(TYPES.KeyValueCache) cache: KeyValueCacheProvider) {
     this.youtube = thirdParty.youtube;
@@ -57,6 +57,7 @@ export default class {
     if (!queueitems) {
       throw new Error('Please try again.');
     }
+
     for (const item of queueitems.items) {
       if (item.type === 'video') {
         firstVideo = item;
