@@ -40,8 +40,6 @@ export default class AddQueryToQueue {
       throw new Error('Could not find settings for guild');
     }
 
-    const {playlistLimit} = settings;
-
     await interaction.deferReply();
 
     let newSongs: SongMetadata[] = [];
