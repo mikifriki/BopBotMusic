@@ -1,6 +1,6 @@
 # BopBotMusic
 
-BopBotMusic is a music bot based off of BopBotMusic bot. The reason for its existance is the removal of Spotifiy and some other minor changes.
+BopBotMusic is a music bot based off of muse bot (https://github.com/codetheweb/muse). The reason for its existance is the removal of Spotifiy and some other minor changes.
 
 
 ## Running
