@@ -36,6 +36,7 @@ import Unskip from './commands/unskip.js';
 import ThirdParty from './services/third-party.js';
 import FileCacheProvider from './services/file-cache.js';
 import KeyValueCacheProvider from './services/key-value-cache.js';
+import Brave from './commands/brave.js';
 import Loop from './commands/loop';
 
 const container = new Container();
@@ -79,6 +80,7 @@ container.bind<YoutubeAPI>(TYPES.Services.YoutubeAPI).to(YoutubeAPI).inSingleton
   Stop,
   Unskip,
   Loop,
+  Brave
 ].forEach(command => {
   container.bind<Command>(TYPES.Command).to(command).inSingletonScope();
 });
