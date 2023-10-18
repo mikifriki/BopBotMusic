@@ -15,14 +15,6 @@ updates:
     - 0.37.0
     - 0.38.0
     - 0.39.0
-  - dependency-name: husky
-    versions:
-    - 5.0.9
-    - 5.1.0
-    - 5.1.1
-    - 5.1.2
-    - 5.1.3
-    - 5.2.0
   - dependency-name: "@discordjs/opus"
     versions:
     - 0.4.0
