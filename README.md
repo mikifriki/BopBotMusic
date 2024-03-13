@@ -2,7 +2,7 @@
 
 BopBotMusic is a music bot based off of muse bot (https://github.com/codetheweb/muse). The reason for its existance is the removal of Spotifiy and some other minor changes.
 
-
+Go support the original bot https://github.com/codetheweb/muse
 ## Running
 
 BopBotMusic is written in TypeScript. You can either run BopBotMusic with Docker (recommended) or directly with Node.js. Both methods require API keys passed in as environment variables:
